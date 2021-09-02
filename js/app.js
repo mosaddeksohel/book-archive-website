@@ -27,6 +27,7 @@ const getBooks = books => {
     document.getElementById('searchItem').value = '';
     books.forEach(book => {
         console.log(book)
+        document.getElementById('countResult').innerText = `Result found ${books.length}`
         document.getElementById('error').innerText = '';
         const div = document.createElement('div');
         div.classList.add('col');
